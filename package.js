@@ -1,0 +1,24 @@
+Package.describe({
+  summary: "Semantic UI packaged for meteor"
+});
+
+Package.on_use(function (api) {
+
+  api.use('jquery');
+
+  var path = Npm.require('path');
+  var asset_path = path.join('semantic');
+  api.add_files(path.join(asset_path, 'css', 'semantic.min.css'), 'client');
+  api.add_files(path.join(asset_path, 'javascript', 'semantic.min.js'), 'client');
+
+  // fonts
+  api.add_files(path.join(asset_path, 'fonts', 'icons.eot'), 'client');
+  api.add_files(path.join(asset_path, 'fonts', 'icons.ttf'), 'client');
+  api.add_files(path.join(asset_path, 'fonts', 'icons.svg'), 'client');
+  api.add_files(path.join(asset_path, 'fonts', 'icons.woff'), 'client');
+
+  // XXX this makes the paths to the icon sets absolute. it needs
+  // to be included _after_ the standard semantic css so
+  // that its styles take precedence.
+  api.add_files('semantic-override.css', 'client');
+});
