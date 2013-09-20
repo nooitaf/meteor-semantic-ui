@@ -7,6 +7,7 @@ This is just a wrapper to use Semantic UI with meteor.
 Semantic is a set of specifications for sharing UI elements between developers. Semantic is also a UI library to make front end development simpler and easier to learn. 
 
 [http://www.semantic-ui.com/](http://www.semantic-ui.com/)
+
 [https://github.com/jlukic/Semantic-UI](https://github.com/jlukic/Semantic-UI)
 
 ##Install
