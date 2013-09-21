@@ -17,6 +17,16 @@ Package.on_use(function (api) {
   api.add_files(path.join(asset_path, 'fonts', 'icons.svg'), 'client');
   api.add_files(path.join(asset_path, 'fonts', 'icons.woff'), 'client');
 
+  // images
+  api.add_files(path.join(asset_path, 'images', 'loader-large-inverted.gif'), 'client');
+  api.add_files(path.join(asset_path, 'images', 'loader-large.gif'), 'client');
+  api.add_files(path.join(asset_path, 'images', 'loader-medium-inverted.gif'), 'client');
+  api.add_files(path.join(asset_path, 'images', 'loader-medium.gif'), 'client');
+  api.add_files(path.join(asset_path, 'images', 'loader-mini-inverted.gif'), 'client');
+  api.add_files(path.join(asset_path, 'images', 'loader-mini.gif'), 'client');
+  api.add_files(path.join(asset_path, 'images', 'loader-small-inverted.gif'), 'client');
+  api.add_files(path.join(asset_path, 'images', 'loader-small.gif'), 'client');
+
   // XXX this makes the paths to the icon sets absolute. it needs
   // to be included _after_ the standard semantic css so
   // that its styles take precedence.
