@@ -12,8 +12,13 @@ Package.on_use(function (api) {
   api.add_files(path.join(asset_path, 'javascript', 'semantic.min.js'), 'client');
 
   // fonts
+  api.add_files(path.join(asset_path, 'fonts', 'basic.icons.eot'), 'client');
+  api.add_files(path.join(asset_path, 'fonts', 'basic.icons.ttf'), 'client');
+  api.add_files(path.join(asset_path, 'fonts', 'basic.icons.svg'), 'client');
+  api.add_files(path.join(asset_path, 'fonts', 'basic.icons.woff'), 'client');
   api.add_files(path.join(asset_path, 'fonts', 'icons.eot'), 'client');
   api.add_files(path.join(asset_path, 'fonts', 'icons.ttf'), 'client');
+  api.add_files(path.join(asset_path, 'fonts', 'icons.otf'), 'client');
   api.add_files(path.join(asset_path, 'fonts', 'icons.svg'), 'client');
   api.add_files(path.join(asset_path, 'fonts', 'icons.woff'), 'client');
 
