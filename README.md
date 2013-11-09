@@ -25,3 +25,9 @@ Template.hello.rendered = function(){
 	$('.ui.dropdown').dropdown();
 }
 ```
+
+### deploy to meteor.com
+To get assets working you will have to copy the folders `/lib/semantic/fonts/` and `/lib/semantic/images/` into your `/public/`
+folder.
+
+See icon test on [http://semantic-ui-092-icon-test.meteor.com/](http://semantic-ui-092-icon-test.meteor.com/)
