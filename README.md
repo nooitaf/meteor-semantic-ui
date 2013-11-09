@@ -11,7 +11,7 @@ Semantic is a set of specifications for sharing UI elements between developers. 
 [https://github.com/jlukic/Semantic-UI](https://github.com/jlukic/Semantic-UI)
 
 ##You'll need
-[https://github.com/oortcloud/meteorite](Meteorite)
+[Meteorite](https://github.com/oortcloud/meteorite)
 
 ##Install
 `mrt add semantic-ui`
