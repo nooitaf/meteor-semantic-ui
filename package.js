@@ -7,7 +7,7 @@ Package.on_use(function (api) {
   api.use('jquery');
 
   var path = Npm.require('path');
-  var asset_path = path.join('semantic');
+  var asset_path = path.join('lib/semantic');
   api.add_files(path.join(asset_path, 'css', 'semantic.min.css'), 'client');
   api.add_files(path.join(asset_path, 'javascript', 'semantic.min.js'), 'client');
 
@@ -32,8 +32,4 @@ Package.on_use(function (api) {
   api.add_files(path.join(asset_path, 'images', 'loader-small-inverted.gif'), 'client');
   api.add_files(path.join(asset_path, 'images', 'loader-small.gif'), 'client');
 
-  // XXX this makes the paths to the icon sets absolute. it needs
-  // to be included _after_ the standard semantic css so
-  // that its styles take precedence.
-  api.add_files('semantic-override.css', 'client');
 });
