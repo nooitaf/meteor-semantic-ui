@@ -10,11 +10,15 @@ Semantic is a set of specifications for sharing UI elements between developers. 
 
 [https://github.com/jlukic/Semantic-UI](https://github.com/jlukic/Semantic-UI)
 
+##You'll need
+[https://github.com/oortcloud/meteorite](Meteorite)
+
 ##Install
 `mrt add semantic-ui`
 
 ###issues:
-Javascript elements like dropdowns should be active by default. At the moment you can activate them in the template.rendered function like: 
+Javascript elements like dropdowns are not active by default. 
+At the moment you will have to activate them 'manually' in the `template.rendered` function like: 
 
 ```javascript
 Template.hello.rendered = function(){
