@@ -7,8 +7,8 @@ Package.on_use(function (api) {
   api.use('jquery');
 
   var path = Npm.require('path');
-  var asset_path = path.join('lib/semantic-ui/build/uncompressed/');
-  var files = [
+  var assetPath = path.join('lib/semantic-ui/build/uncompressed/');
+  var assetFiles = [
     assetPath + 'collections/breadcrumb.css',
     assetPath + 'collections/form.css',
     assetPath + 'collections/grid.css',
@@ -85,6 +85,6 @@ Package.on_use(function (api) {
     assetPath + 'views/list.css',
     assetPath + 'views/statistic.css',
   ]
-  api.add_files(files, 'client');
+  api.add_files(assetFiles, 'client');
 
 });
