@@ -7,29 +7,84 @@ Package.on_use(function (api) {
   api.use('jquery');
 
   var path = Npm.require('path');
-  var asset_path = path.join('lib/semantic');
-  api.add_files(path.join(asset_path, 'css', 'semantic.min.css'), 'client');
-  api.add_files(path.join(asset_path, 'javascript', 'semantic.min.js'), 'client');
-
-  // fonts
-  api.add_files(path.join(asset_path, 'fonts', 'basic.icons.eot'), 'client');
-  api.add_files(path.join(asset_path, 'fonts', 'basic.icons.ttf'), 'client');
-  api.add_files(path.join(asset_path, 'fonts', 'basic.icons.svg'), 'client');
-  api.add_files(path.join(asset_path, 'fonts', 'basic.icons.woff'), 'client');
-  api.add_files(path.join(asset_path, 'fonts', 'icons.eot'), 'client');
-  api.add_files(path.join(asset_path, 'fonts', 'icons.ttf'), 'client');
-  api.add_files(path.join(asset_path, 'fonts', 'icons.otf'), 'client');
-  api.add_files(path.join(asset_path, 'fonts', 'icons.svg'), 'client');
-  api.add_files(path.join(asset_path, 'fonts', 'icons.woff'), 'client');
-
-  // images
-  api.add_files(path.join(asset_path, 'images', 'loader-large-inverted.gif'), 'client');
-  api.add_files(path.join(asset_path, 'images', 'loader-large.gif'), 'client');
-  api.add_files(path.join(asset_path, 'images', 'loader-medium-inverted.gif'), 'client');
-  api.add_files(path.join(asset_path, 'images', 'loader-medium.gif'), 'client');
-  api.add_files(path.join(asset_path, 'images', 'loader-mini-inverted.gif'), 'client');
-  api.add_files(path.join(asset_path, 'images', 'loader-mini.gif'), 'client');
-  api.add_files(path.join(asset_path, 'images', 'loader-small-inverted.gif'), 'client');
-  api.add_files(path.join(asset_path, 'images', 'loader-small.gif'), 'client');
+  var asset_path = path.join('lib/semantic-ui/build/uncompressed/');
+  var files = [
+    assetPath + 'collections/breadcrumb.css',
+    assetPath + 'collections/form.css',
+    assetPath + 'collections/grid.css',
+    assetPath + 'collections/menu.css',
+    assetPath + 'collections/message.css',
+    assetPath + 'collections/table.css',
+    assetPath + 'elements/basic.icon.css',
+    assetPath + 'elements/button.css',
+    assetPath + 'elements/divider.css',
+    assetPath + 'elements/header.css',
+    assetPath + 'elements/icon.css',
+    assetPath + 'elements/image.css',
+    assetPath + 'elements/input.css',
+    assetPath + 'elements/label.css',
+    assetPath + 'elements/loader.css',
+    assetPath + 'elements/progress.css',
+    assetPath + 'elements/reveal.css',
+    assetPath + 'elements/segment.css',
+    assetPath + 'elements/step.css',
+    assetPath + 'fonts/basic.icons.eot',
+    assetPath + 'fonts/basic.icons.svg',
+    assetPath + 'fonts/basic.icons.ttf',
+    assetPath + 'fonts/basic.icons.woff',
+    assetPath + 'fonts/icons.eot',
+    assetPath + 'fonts/icons.otf',
+    assetPath + 'fonts/icons.svg',
+    assetPath + 'fonts/icons.ttf',
+    assetPath + 'fonts/icons.woff',
+    assetPath + 'images/loader-large-inverted.gif',
+    assetPath + 'images/loader-large.gif',
+    assetPath + 'images/loader-medium-inverted.gif',
+    assetPath + 'images/loader-medium.gif',
+    assetPath + 'images/loader-mini-inverted.gif',
+    assetPath + 'images/loader-mini.gif',
+    assetPath + 'images/loader-small-inverted.gif',
+    assetPath + 'images/loader-small.gif',
+    assetPath + 'modules/accordion.css',
+    assetPath + 'modules/accordion.js',
+    assetPath + 'modules/behavior/api.js',
+    assetPath + 'modules/behavior/colorize.js',
+    assetPath + 'modules/behavior/form.js',
+    assetPath + 'modules/behavior/state.js',
+    assetPath + 'modules/chatroom.css',
+    assetPath + 'modules/chatroom.js',
+    assetPath + 'modules/checkbox.css',
+    assetPath + 'modules/checkbox.js',
+    assetPath + 'modules/dimmer.css',
+    assetPath + 'modules/dimmer.js',
+    assetPath + 'modules/dropdown.css',
+    assetPath + 'modules/dropdown.js',
+    assetPath + 'modules/modal.css',
+    assetPath + 'modules/modal.js',
+    assetPath + 'modules/nag.css',
+    assetPath + 'modules/nag.js',
+    assetPath + 'modules/popup.css',
+    assetPath + 'modules/popup.js',
+    assetPath + 'modules/rating.css',
+    assetPath + 'modules/rating.js',
+    assetPath + 'modules/search.css',
+    assetPath + 'modules/search.js',
+    assetPath + 'modules/shape.css',
+    assetPath + 'modules/shape.js',
+    assetPath + 'modules/sidebar.css',
+    assetPath + 'modules/sidebar.js',
+    assetPath + 'modules/tab.css',
+    assetPath + 'modules/tab.js',
+    assetPath + 'modules/transition.css',
+    assetPath + 'modules/transition.js',
+    assetPath + 'modules/video.css',
+    assetPath + 'modules/video.js',
+    assetPath + 'views/comment.css',
+    assetPath + 'views/feed.css',
+    assetPath + 'views/item.css',
+    assetPath + 'views/list.css',
+    assetPath + 'views/statistic.css',
+  ]
+  api.add_files(files, 'client');
 
 });
