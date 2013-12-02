@@ -83,8 +83,8 @@ Package.on_use(function (api) {
     assetPath + 'views/feed.css',
     assetPath + 'views/item.css',
     assetPath + 'views/list.css',
-    assetPath + 'views/statistic.css',
-  ]
+    assetPath + 'views/statistic.css'
+  ];
   api.add_files(assetFiles, 'client');
 
 });
