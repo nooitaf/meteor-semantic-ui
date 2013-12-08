@@ -4,7 +4,7 @@ Package.describe({
 
 Package.on_use(function (api) {
 
-  api.use('jquery');
+  api.use('jquery','client');
 
   var path = Npm.require('path');
   var assetPath = path.join('lib/semantic-ui/build/uncompressed/');
