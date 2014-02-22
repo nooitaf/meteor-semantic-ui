@@ -196,7 +196,7 @@
 ---------------*/
 
 .ui.search.loading .input .icon {
-  background: url(../images/loader-mini.gif) no-repeat 50% 50%;
+  background: url(/packages/semantic-ui/lib/semantic-ui/build/uncompressed/images/loader-mini.gif) no-repeat 50% 50%;
 }
 
 .ui.search.loading .input .icon:before,

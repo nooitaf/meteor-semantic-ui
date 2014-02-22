@@ -28,8 +28,8 @@
 
 @font-face {
   font-family: 'Icons';
-  src: url(../fonts/icons.eot);
-  src: url(../fonts/icons.eot?#iefix) format('embedded-opentype'), url(../fonts/icons.svg#icons) format('svg'), url(../fonts/icons.woff) format('woff'), url(../fonts/icons.ttf) format('truetype');
+  src: url(/packages/semantic-ui/lib/semantic-ui/build/uncompressed/fonts/icons.eot);
+  src: url(/packages/semantic-ui/lib/semantic-ui/build/uncompressed/fonts/icons.eot?#iefix) format('embedded-opentype'), url(/packages/semantic-ui/lib/semantic-ui/build/uncompressed/fonts/icons.svg#icons) format('svg'), url(/packages/semantic-ui/lib/semantic-ui/build/uncompressed/fonts/icons.woff) format('woff'), url(/packages/semantic-ui/lib/semantic-ui/build/uncompressed/fonts/icons.ttf) format('truetype');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
