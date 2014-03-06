@@ -3,7 +3,7 @@
   "description": "Semantic UI packaged for meteor",
   "homepage": "https://github.com/nooitaf/meteor-semantic-ui",
   "author": "nooitaf (http://nooitaf.nl)",
-  "version": "0.13.1",
+  "version": "0.14.0",
   "git": "https://github.com/nooitaf/meteor-semantic-ui.git",
   "packages": { }
 }
