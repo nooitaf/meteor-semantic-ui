@@ -9,7 +9,7 @@ This is just a wrapper to use Semantic UI `v0.16.1` with meteor.
 Semantic is a set of specifications for sharing UI elements between developers. Semantic is also a UI library to make front end development simpler and easier to learn. 
 
 [semantic-ui.com](http://www.semantic-ui.com/)
-[github.com/jlukic/Semantic-UI](https://github.com/jlukic/Semantic-UI)
+[github.com/jlukic/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI)
 
 ####You'll need
 [Meteorite](https://github.com/oortcloud/meteorite) 
