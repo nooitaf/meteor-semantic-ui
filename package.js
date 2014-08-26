@@ -1,9 +1,13 @@
 Package.describe({
-  summary: "Semantic UI packaged for meteor"
+  summary: "Semantic UI packaged for Meteor",
+  version: "0.19.0",
+  name: "nooitaf:semantic-ui",
+  git: "https://github.com/nooitaf/meteor-semantic-ui.git"
 });
 
-Package.on_use(function (api) {
 
+Package.on_use(function (api) {
+  api.versionsFrom('METEOR@0.9.0');
   api.use('jquery','client');
 
   var path = Npm.require('path');
