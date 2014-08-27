@@ -9,11 +9,8 @@ Semantic is a set of specifications for sharing UI elements between developers. 
 [http://semantic-ui.com](http://www.semantic-ui.com/)  
 [https://github.com/Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI)
 
-####You'll need
-[Meteorite](https://github.com/oortcloud/meteorite) 
-
 ###Install
-`mrt add semantic-ui`
+`meteor add nooitaf:semantic-ui`
 
 ####issues:
 Javascript elements like dropdowns are not active by default. 
