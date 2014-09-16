@@ -49,6 +49,6 @@
   width: 100%;
   height: 100%;
   padding-top: 75px;
-  background: url(/packages/nooitaf:semantic-ui/lib/semantic-ui/build/uncompressed/images/loader-large.gif) no-repeat 0px 0px;
+  background: url(/packages/nooitaf_semantic-ui/lib/semantic-ui/build/uncompressed/images/loader-large.gif) no-repeat 0px 0px;
   visibility: visible;
 }

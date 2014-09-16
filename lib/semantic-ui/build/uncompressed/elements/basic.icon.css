@@ -13,8 +13,8 @@
 *******************************/
 @font-face {
   font-family: 'Basic Icons';
-  src: url(/packages/nooitaf:semantic-ui/lib/semantic-ui/build/uncompressed/fonts/basic.icons.eot);
-  src: url(/packages/nooitaf:semantic-ui/lib/semantic-ui/build/uncompressed/fonts/basic.icons.eot?#iefix) format('embedded-opentype'), url(/packages/nooitaf:semantic-ui/lib/semantic-ui/build/uncompressed/fonts/basic.icons.svg#basic.icons) format('svg'), url(/packages/nooitaf:semantic-ui/lib/semantic-ui/build/uncompressed/fonts/basic.icons.woff) format('woff'), url(/packages/nooitaf:semantic-ui/lib/semantic-ui/build/uncompressed/fonts/basic.icons.ttf) format('truetype');
+  src: url(/packages/nooitaf_semantic-ui/lib/semantic-ui/build/uncompressed/fonts/basic.icons.eot);
+  src: url(/packages/nooitaf_semantic-ui/lib/semantic-ui/build/uncompressed/fonts/basic.icons.eot?#iefix) format('embedded-opentype'), url(/packages/nooitaf_semantic-ui/lib/semantic-ui/build/uncompressed/fonts/basic.icons.svg#basic.icons) format('svg'), url(/packages/nooitaf_semantic-ui/lib/semantic-ui/build/uncompressed/fonts/basic.icons.woff) format('woff'), url(/packages/nooitaf_semantic-ui/lib/semantic-ui/build/uncompressed/fonts/basic.icons.ttf) format('truetype');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;

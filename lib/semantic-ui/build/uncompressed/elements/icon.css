@@ -26,8 +26,8 @@
 *******************************/
 @font-face {
   font-family: 'Icons';
-  src: url(/packages/nooitaf:semantic-ui/lib/semantic-ui/build/uncompressed/fonts/icons.eot);
-  src: url(/packages/nooitaf:semantic-ui/lib/semantic-ui/build/uncompressed/fonts/icons.eot?#iefix) format('embedded-opentype'), url(/packages/nooitaf:semantic-ui/lib/semantic-ui/build/uncompressed/fonts/icons.svg#icons) format('svg'), url(/packages/nooitaf:semantic-ui/lib/semantic-ui/build/uncompressed/fonts/icons.woff) format('woff'), url(/packages/nooitaf:semantic-ui/lib/semantic-ui/build/uncompressed/fonts/icons.ttf) format('truetype');
+  src: url(/packages/nooitaf_semantic-ui/lib/semantic-ui/build/uncompressed/fonts/icons.eot);
+  src: url(/packages/nooitaf_semantic-ui/lib/semantic-ui/build/uncompressed/fonts/icons.eot?#iefix) format('embedded-opentype'), url(/packages/nooitaf_semantic-ui/lib/semantic-ui/build/uncompressed/fonts/icons.svg#icons) format('svg'), url(/packages/nooitaf_semantic-ui/lib/semantic-ui/build/uncompressed/fonts/icons.woff) format('woff'), url(/packages/nooitaf_semantic-ui/lib/semantic-ui/build/uncompressed/fonts/icons.ttf) format('truetype');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;

@@ -1,7 +1,7 @@
 ##Semantic UI package for meteor
 
 ###What is this?
-This is a wrapper for Semantic UI `v0.19.2` for Meteor.
+This is a wrapper for Semantic UI `v0.19.3` for Meteor.
 
 ###What is Semantic UI?
 Semantic is a set of specifications for sharing UI elements between developers. Semantic is also a UI library to make front end development simpler and easier to learn. 
