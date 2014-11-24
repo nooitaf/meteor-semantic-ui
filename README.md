@@ -22,3 +22,5 @@ Template.hello.rendered = function(){
 	$('.ui.dropdown').dropdown();
 }
 ```
+
+Kitchensink on Meteor: [http://semantic-ui-100-kitchensink.meteor.com](http://semantic-ui-100-kitchensink.meteor.com)
