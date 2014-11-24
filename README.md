@@ -1,7 +1,7 @@
 ##Semantic UI package for meteor
 
 ###What is this?
-This is a wrapper for Semantic UI `v0.19.3` for Meteor.
+This is a wrapper for Semantic UI `v1.0.0` for Meteor.
 
 ###What is Semantic UI?
 Semantic is a set of specifications for sharing UI elements between developers. Semantic is also a UI library to make front end development simpler and easier to learn. 
@@ -12,8 +12,8 @@ Semantic is a set of specifications for sharing UI elements between developers. 
 ###Install
 `meteor add nooitaf:semantic-ui`
 
-####issues:
-Javascript elements like dropdowns are not active by default. 
+####Using Modules:
+Javascript elements (modules) like dropdowns are not active by default. 
 You will have to activate them 'manually' in the `template.rendered` function like: 
 
 ```javascript

@@ -1,94 +1,118 @@
 Package.describe({
   summary: "Semantic UI packaged for Meteor",
-  version: "0.19.3",
+  version: "1.0.0",
   name: "nooitaf:semantic-ui",
   git: "https://github.com/nooitaf/meteor-semantic-ui.git"
 });
 
 
 Package.on_use(function (api) {
-  api.versionsFrom('METEOR@0.9.2');
+  api.versionsFrom('METEOR@1.0');
   api.use('jquery','client');
 
   var path = Npm.require('path');
-  var assetPath = path.join('lib/semantic-ui/build/uncompressed/');
+
+  var assetPath = path.join('lib/semantic-ui/');
   var assetFiles = [
-    assetPath + 'collections/breadcrumb.css',
-    assetPath + 'collections/form.css',
-    assetPath + 'collections/grid.css',
-    assetPath + 'collections/menu.css',
-    assetPath + 'collections/message.css',
-    assetPath + 'collections/table.css',
-    assetPath + 'elements/basic.icon.css',
-    assetPath + 'elements/button.css',
-    assetPath + 'elements/divider.css',
-    assetPath + 'elements/header.css',
-    assetPath + 'elements/icon.css',
-    assetPath + 'elements/image.css',
-    assetPath + 'elements/input.css',
-    assetPath + 'elements/label.css',
-    assetPath + 'elements/loader.css',
-    assetPath + 'elements/progress.css',
-    assetPath + 'elements/reveal.css',
-    assetPath + 'elements/segment.css',
-    assetPath + 'elements/step.css',
-    assetPath + 'fonts/basic.icons.eot',
-    assetPath + 'fonts/basic.icons.svg',
-    assetPath + 'fonts/basic.icons.ttf',
-    assetPath + 'fonts/basic.icons.woff',
-    assetPath + 'fonts/icons.eot',
-    assetPath + 'fonts/icons.otf',
-    assetPath + 'fonts/icons.svg',
-    assetPath + 'fonts/icons.ttf',
-    assetPath + 'fonts/icons.woff',
-    assetPath + 'images/loader-large-inverted.gif',
-    assetPath + 'images/loader-large.gif',
-    assetPath + 'images/loader-medium-inverted.gif',
-    assetPath + 'images/loader-medium.gif',
-    assetPath + 'images/loader-mini-inverted.gif',
-    assetPath + 'images/loader-mini.gif',
-    assetPath + 'images/loader-small-inverted.gif',
-    assetPath + 'images/loader-small.gif',
-    assetPath + 'modules/accordion.css',
-    assetPath + 'modules/accordion.js',
-    assetPath + 'modules/behavior/api.js',
-    assetPath + 'modules/behavior/colorize.js',
-    assetPath + 'modules/behavior/form.js',
-    assetPath + 'modules/behavior/state.js',
-    assetPath + 'modules/chatroom.css',
-    assetPath + 'modules/chatroom.js',
-    assetPath + 'modules/checkbox.css',
-    assetPath + 'modules/checkbox.js',
-    assetPath + 'modules/dimmer.css',
-    assetPath + 'modules/dimmer.js',
-    assetPath + 'modules/dropdown.css',
-    assetPath + 'modules/dropdown.js',
-    assetPath + 'modules/modal.css',
-    assetPath + 'modules/modal.js',
-    assetPath + 'modules/nag.css',
-    assetPath + 'modules/nag.js',
-    assetPath + 'modules/popup.css',
-    assetPath + 'modules/popup.js',
-    assetPath + 'modules/rating.css',
-    assetPath + 'modules/rating.js',
-    assetPath + 'modules/search.css',
-    assetPath + 'modules/search.js',
-    assetPath + 'modules/shape.css',
-    assetPath + 'modules/shape.js',
-    assetPath + 'modules/sidebar.css',
-    assetPath + 'modules/sidebar.js',
-    assetPath + 'modules/tab.css',
-    assetPath + 'modules/tab.js',
-    assetPath + 'modules/transition.css',
-    assetPath + 'modules/transition.js',
-    assetPath + 'modules/video.css',
-    assetPath + 'modules/video.js',
-    assetPath + 'views/comment.css',
-    assetPath + 'views/feed.css',
-    assetPath + 'views/item.css',
-    assetPath + 'views/list.css',
-    assetPath + 'views/statistic.css'
+    assetPath + 'components/accordion.css',
+    assetPath + 'components/accordion.js',
+    assetPath + 'components/api.js',
+    assetPath + 'components/breadcrumb.css',
+    assetPath + 'components/button.css',
+    assetPath + 'components/card.css',
+    assetPath + 'components/checkbox.css',
+    assetPath + 'components/checkbox.js',
+    assetPath + 'components/colorize.js',
+    assetPath + 'components/comment.css',
+    assetPath + 'components/dimmer.css',
+    assetPath + 'components/dimmer.js',
+    assetPath + 'components/divider.css',
+    assetPath + 'components/dropdown.css',
+    assetPath + 'components/dropdown.js',
+    assetPath + 'components/feed.css',
+    assetPath + 'components/flag.css',
+    assetPath + 'components/form.css',
+    assetPath + 'components/form.js',
+    assetPath + 'components/grid.css',
+    assetPath + 'components/header.css',
+    assetPath + 'components/icon.css',
+    assetPath + 'components/image.css',
+    assetPath + 'components/input.css',
+    assetPath + 'components/item.css',
+    assetPath + 'components/label.css',
+    assetPath + 'components/list.css',
+    assetPath + 'components/loader.css',
+    assetPath + 'components/menu.css',
+    assetPath + 'components/message.css',
+    assetPath + 'components/modal.css',
+    assetPath + 'components/modal.js',
+    assetPath + 'components/nag.css',
+    assetPath + 'components/nag.js',
+    assetPath + 'components/popup.css',
+    assetPath + 'components/popup.js',
+    assetPath + 'components/progress.css',
+    assetPath + 'components/progress.js',
+    assetPath + 'components/rail.css',
+    assetPath + 'components/rating.css',
+    assetPath + 'components/rating.js',
+    assetPath + 'components/reset.css',
+    assetPath + 'components/reveal.css',
+    assetPath + 'components/search.css',
+    assetPath + 'components/search.js',
+    assetPath + 'components/segment.css',
+    assetPath + 'components/shape.css',
+    assetPath + 'components/shape.js',
+    assetPath + 'components/sidebar.css',
+    assetPath + 'components/sidebar.js',
+    assetPath + 'components/site.css',
+    assetPath + 'components/site.js',
+    assetPath + 'components/state.js',
+    assetPath + 'components/statistic.css',
+    assetPath + 'components/step.css',
+    assetPath + 'components/sticky.css',
+    assetPath + 'components/sticky.js',
+    assetPath + 'components/tab.css',
+    assetPath + 'components/tab.js',
+    assetPath + 'components/table.css',
+    assetPath + 'components/transition.css',
+    assetPath + 'components/transition.js',
+    assetPath + 'components/video.css',
+    assetPath + 'components/video.js',
+    assetPath + 'components/visibility.js',
+    assetPath + 'components/visit.js',
+    assetPath + 'semantic.css',
+    assetPath + 'semantic.js',
+    assetPath + 'themes/basic/assets/fonts/icons.eot',
+    assetPath + 'themes/basic/assets/fonts/icons.svg',
+    assetPath + 'themes/basic/assets/fonts/icons.ttf',
+    assetPath + 'themes/basic/assets/fonts/icons.woff',
+    assetPath + 'themes/default/assets/fonts/icons.eot',
+    assetPath + 'themes/default/assets/fonts/icons.otf',
+    assetPath + 'themes/default/assets/fonts/icons.svg',
+    assetPath + 'themes/default/assets/fonts/icons.ttf',
+    assetPath + 'themes/default/assets/fonts/icons.woff',
+    assetPath + 'themes/default/assets/images/flags.png'
   ];
   api.add_files(assetFiles, 'client');
 
+  // jquery-address dependancy 
+  // ----------------------------
+  // (TODO: create package)
+  // ----------------------------
+  api.add_files('lib/jquery-address/jquery.address.js', 'client');
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
