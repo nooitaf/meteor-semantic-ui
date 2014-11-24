@@ -1,4 +1,5 @@
 ##Semantic UI package for meteor
+[![Build Status](https://travis-ci.org/nooitaf/meteor-semantic-ui.svg?branch=master)](https://travis-ci.org/nooitaf/meteor-semantic-ui.svg?branch=master)
 
 ###What is this?
 This is a wrapper for Semantic UI `v1.0.0` for Meteor.
