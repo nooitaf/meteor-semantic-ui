@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/nooitaf/meteor-semantic-ui.svg?branch=master)](https://travis-ci.org/nooitaf/meteor-semantic-ui.svg?branch=master)
 
 ###What is this?
-This is a wrapper for Semantic UI `v1.0.0` for Meteor.
+This is a wrapper for Semantic UI `v1.0.1` for Meteor.
 
 ###What is Semantic UI?
 Semantic is a set of specifications for sharing UI elements between developers. Semantic is also a UI library to make front end development simpler and easier to learn. 
@@ -15,12 +15,36 @@ Semantic is a set of specifications for sharing UI elements between developers. 
 
 ####Using Modules:
 Javascript elements (modules) like dropdowns are not active by default. 
-You will have to activate them 'manually' in the `template.rendered` function like: 
+You will have to activate them 'manually' in the `template.rendered` of `event` function like: 
 
 ```javascript
+// dropdown
 Template.hello.rendered = function(){
 	$('.ui.dropdown').dropdown();
 }
 ```
 
-Kitchensink on Meteor: [http://semantic-ui-100-kitchensink.meteor.com](http://semantic-ui-100-kitchensink.meteor.com)
+You might want to consider using __Approve / Deny Callbacks__.
+```javascript
+// modal
+Template.hello.events({
+  'click .openModal': function () {
+    $('#modalView')
+      .modal({
+        onDeny    : function(){
+          console.log('canceled');
+          return false;
+        },
+        onApprove : function() {
+        	console.log('pressed ok');
+        }
+      })
+      .modal('show')
+    ;
+  }
+});
+```
+http://semantic-ui.com/modules/modal.html#/examples
+
+
+Kitchensink on Meteor: [http://semantic-ui-101-kitchensink.meteor.com](http://semantic-ui-101-kitchensink.meteor.com)
