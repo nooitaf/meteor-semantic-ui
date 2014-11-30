@@ -80,8 +80,6 @@ Package.on_use(function (api) {
     assetPath + 'components/video.js',
     assetPath + 'components/visibility.js',
     assetPath + 'components/visit.js',
-    assetPath + 'semantic.css',
-    assetPath + 'semantic.js',
     assetPath + 'themes/basic/assets/fonts/icons.eot',
     assetPath + 'themes/basic/assets/fonts/icons.svg',
     assetPath + 'themes/basic/assets/fonts/icons.ttf',
