@@ -1,5 +1,34 @@
 ## RELEASE NOTES
 
+### Version 1.2.0 - December 08, 2014
+
+[Browse Closed Issues](https://github.com/Semantic-Org/Semantic-UI/issues?q=is%3Aissue+milestone%3A1.1.3+is%3Aclosed)
+
+**Enhancement**
+- **Form** - Form validation now has parameter ``optional`` which will only validate a field against a set of rules if the user does not leave it blank
+- **Fonts** - Add font subset variable for ``site.variables`` **Thanks gabormeszoly**
+- **Modal** - Default modal shadow now more subtle
+- **Sidebar** - Now has behaviors ``is open/closed`` that are aliases for ``is visible/hidden``
+- **Checkbox** - JS Checkbox now handles several variations of html. Labels can be before inputs, after, or not included at all. This should work better with server side form generation.
+- **Progress** - Adds ``limitValues`` setting to adjust values outside of 0-100 automatically to within range, defaults to true
+
+**Bugs**
+- **Grid** - Fixes ``ui stackable grid`` sometimes not aligning correctly at mobile sizes with ``ui page grid``
+- **Progress** - Fixes issues with setting progress to 0% not working as expected
+- **Modal** - Fixes issues with multiple modals sometimes not closing dimmers
+- **Modal** - When a second modal that is not scrolling is opened after a scrolling modal it no longer causes the first modal to not be scrollable
+- **Modal** - "Hammer" clicking multiple times on a hiding dimmer no longer causes animation issues
+- **Sidebar** - Fixes issue with multiple sidebars sometimes causing dimmer to close prematurely
+- **Sidebar** - Dimmer can now be clicked even before sidebar has finished showing to immediately close sidebar
+- **Item/Card** - Default link formatting inside element simplified to avoid adjusting other nested ``ui`` link styles
+- **Dropdown** - Fixes bug with dropdown converted from ``select`` that use ``<option`` values with capital letters not being selectable
+- **Form** - Fixes required checkbox asterisks formatting incorrect
+
+**Docs / Build **
+- Fixed documenation on dropdown actions, field width specification, form validation types, and some odds & ends
+- Adds components to semantic.json.example
+- Theme.config.example now links to final site folder
+
 ### Version 1.1.2 - December 03, 2014
 
 - **NPM** - Fixes issue with ``dist/`` not being included when using NPM due to ``.gitignore``
