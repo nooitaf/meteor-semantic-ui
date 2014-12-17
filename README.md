@@ -36,7 +36,7 @@ Template.hello.events({
           return false;
         },
         onApprove : function() {
-        	console.log('pressed ok');
+          console.log('pressed ok');
         }
       })
       .modal('show')
