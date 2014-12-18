@@ -1,11 +1,60 @@
 ## RELEASE NOTES
 
+### Version 1.3.2 - December 17, 2014
+
+- **Modal** - Fixed issue with modal dimmer appearing cut off in some browsers, and not hiding
+
+### Version 1.3.1 - December 17, 2014
+
+- **Button** - Dist version of button accidentally included ``chubby`` theme instead of ``default`` theme
+
+### Version 1.3.0 - December 17, 2014
+
+[Browse Closed Issues for 1.3.0](https://github.com/Semantic-Org/Semantic-UI/issues?q=is%3Aissue+milestone%3A1.2.1+is%3Aclosed)
+
+**Critical Bugs**
+- **Build Tools** - Fixed issue with ``theme.config`` causing ``gulp watch`` to throw an error
+
+**Enhancement**
+- **Dropdown** - Dropdown can now specify which direction a menu should appear left/right, dropdown icons can also appear on the left
+- **Dropdown** - Full text search now defaults to ``false``, meaning search terms will return only results beginning with letters
+- **Dropdown** - Search Dropdown is now much more responsive, js improvements and input throttling added.Throttling defaults to `50ms` and can be modified with settings ``delay.search``
+- **Dropdown** - Search Dropdown now correctly replaces placeholder text when backspacing to empty value
+- **Dropdown** - Search Dropdown now has a callback when all results filtered ``onNoResults``
+- **Dropdown** - Search dropdown will now strip html before searching values when searching html
+- **Dropdown** - Search now has keyboard shortcut to open dropdown on arrow down
+- **Form** - Form will no longer process validation rules on disabled fields
+- **Label** - Corner attached labels now display correctly inside of attached segments
+- **Steps** - Steps are now responsive for mobile by default, and have optional responsive styles for tablet
+- **Table** - Table has now variations to remove responsive stylings, specify responsiveness for tablet
+- **Table** - Table now has a ``structured table`` type, which removes some formatting considerations to support complex table layouts with ``colspan`` and ``rowspan``
+
+**Bugs**
+- **Button** - Button "or" positioning variables have been adjusted to be automatically calculated without magic numbers
+- **Dropdown** - Dropdown now always scrolls to active element on menu open, calculates position with new ``loading`` class
+- **Dropdown** - Fix bug in position of sub menus with ``floating dropdown``
+- **Form** - Fixed positioning of horizontal field groups, aka ``fields`` for mobile.
+- **Grid** - ``stackable grid`` now display correctly when nested inside a different ``stackable grid``
+- **Image** - UI image now works with SVG
+- **Modal** - Fixed issue with modal losing scroll position on mobile
+- **Modal/Dimmer** - Fixed issues with modal hiding during showing and showing during hiding, fixed issues with "hiding other" modals while a modal is mid-animation.
+- **Segment** - Vertical segments now have padding on first/last element, fixing issues when using with grids
+- **Sidebar** - Mobile sidebars now only set ``overflow`` on page's ``html`` when browsing from ``iOS`` devices. Using overflow caused issues with page's scroll being lost when resizing a browser to mobile widths. This also affected modules that used  `$(window).scrollTop()`` at mobile screen sizes
+- **Step** - Fix issue with completed ordered step icon alignment
+- **Table** - Fix responsive styles when applied to ``definition table``.
+- **All UI** - Adds error message when triggering an invalid module behavior i.e. typos ``$('.dropdown').dropdown('hid');``
+
+**Docs**
+- **Button** - Add tabindex /keyboard nav documentation
+- **Grid** - Add another grid example
+- Updates to reflect all new changes to UI listed above
+
 ### Version 1.2.0 - December 08, 2014
 
 [Browse Closed Issues](https://github.com/Semantic-Org/Semantic-UI/issues?q=is%3Aissue+milestone%3A1.1.3+is%3Aclosed)
 
 **Enhancement**
-- **Form** - Form validation now has parameter ``optional`` which will only validate a field against a set of rules if the user does not leave it blank
+- **Form** - Form validation now has parameter ``optional`` which will only validate a field against a set of rules if the user does not leave it blank **Thanks DHNCarlos**
 - **Fonts** - Add font subset variable for ``site.variables`` **Thanks gabormeszoly**
 - **Modal** - Default modal shadow now more subtle
 - **Sidebar** - Now has behaviors ``is open/closed`` that are aliases for ``is visible/hidden``
@@ -24,8 +73,8 @@
 - **Dropdown** - Fixes bug with dropdown converted from ``select`` that use ``<option`` values with capital letters not being selectable
 - **Form** - Fixes required checkbox asterisks formatting incorrect
 
-**Docs / Build **
-- Fixed documenation on dropdown actions, field width specification, form validation types, and some odds & ends
+**Docs / Build**
+- Fixed documentation on dropdown actions, form field widths, form validation types, and many odds & ends
 - Adds components to semantic.json.example
 - Theme.config.example now links to final site folder
 
