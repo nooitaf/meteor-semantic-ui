@@ -20,7 +20,7 @@ You will have to activate them 'manually' in the `template.rendered` of `event` 
 ```javascript
 // dropdown
 Template.hello.rendered = function(){
-	$('.ui.dropdown').dropdown();
+  this.$('.ui.dropdown').dropdown();
 }
 ```
 
