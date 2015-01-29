@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Semantic UI packaged for Meteor",
-  version: "1.8.0",
+  version: "1.8.1",
   name: "nooitaf:semantic-ui",
   git: "https://github.com/nooitaf/meteor-semantic-ui.git"
 });

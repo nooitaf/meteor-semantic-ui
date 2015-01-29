@@ -1,5 +1,14 @@
 ## RELEASE NOTES
 
+### Version 1.8.1 - January 26, 2015
+
+**Bugs**
+- **Grid** - Removed `text-align: left` from column definition. Now inherits from grid.
+- **Input** - `ui labeled input` now forces  `table-cell` so that it can use `ui dropdown`, added example in ui docs with dropdown
+- **Input** - Fix border radius on `ui action input` with button groups, aka `ui buttons`
+- **Popup** - Popup `hide all` will now use transition set in `settings.transition` when closing other popups
+- **Grid** - Fix `doubling grid` setting `100% width` which may cause
+
 ### Version 1.8.0 - January 23, 2015
 
 [View Closed Issues](https://github.com/Semantic-Org/Semantic-UI/issues?q=is%3Aissue+milestone%3A1.8.0+is%3Aclosed+sort%3Acomments-desc)
@@ -44,7 +53,7 @@
 - **Sidebar** - Mobile `is mobile` was using RegExp `test()` which would return an incorrect value when called multiple times
 - **Sidebar** - Sidebar will now only close if you click on `pusher` or underlayed `body` (scale out). Clicking on fixed elements will not close sidebar.
 - **Transition** - Fixed bug with animations that contain the strings 'in' or 'out' as part of their names, for example "swing"
-- *Sticky** - Fixes issue with container size not being set explicitly on rail due to improper method renaming
+- **Sticky** - Fixes issue with container size not being set explicitly on rail due to improper method renaming
 
 ### Version 1.7.3 - January 16, 2015
 
