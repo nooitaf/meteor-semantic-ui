@@ -1,10 +1,91 @@
 ## RELEASE NOTES
 
+### Version 1.9.1 - February 18, 2015
+
+**LESS Changes**
+
+Importing individual components into other less files now requires scoping. This is to prevent issues with variable scope that cannot be resolved inside definitions.
+
+```less
+/* Import a specific component */
+& { @import 'src/definitions/elements/button'; }
+```
+
+Importing `semantic.less` still does not require any special syntax
+@import 'src/semantic';
+
+
+**Bugs**
+- Fixed issue directly importing `semantic.less` caused by variable scoping in `.loadOverrides()`.
+- Fix bug where `equal height` row could not be `centered`, or less than full width
+
+### Version 1.9.0 - February 17, 2015
+
+### Build Tools
+
+##### NPM Install
+
+- `npm install semantic-ui` is now the recommended path for getting Semantic UI
+- Added `npm` `post-install` scripts which automatically install or update semantic
+
+##### Gulp Task Imports
+
+- Semantic tasks are now each defined [in their own file](https://github.com/Semantic-Org/Semantic-UI/tree/master/tasks), and can be directly imported into external gulpfiles. Read more about [importing tasks here](https://github.com/Semantic-Org/Semantic-UI/blob/next/src/README.md)
+- If you are using Grunt, you may be able to import these tasks using [Grunt-gulp](https://www.npmjs.com/package/grunt-gulp)
+
+##### LESS Component Imports
+
+- Semantic LESS files can now be directly included in other LESS files.
+* You can import all UI with `@import 'src/semantic';`
+* You can also import individual definitions using `@import 'src/definitions/elements/button'`.
+
+### UI Changes
+**Major Enhancements**
+- **Card** - Cards now equalize height by default using `display: flex`. No longer are card heights required to be specified manually to align
+- **Flag** - Reduced the file size of flag sprite to a measly 28kb (500%+ file size reduction)
+- **Icon** - Added Font Awesome 4.3 including many new icons
+- **Input** - Input with dropdowns is now much easier, see docs. `action input` and `labeled input` now use `display: flex`. `ui action input` now supports `<button>` tag usage (!) which support `flex` but not `table-cell`
+- **Segment** - Added plural variation `ui segments` that stack together in groups without using additional class names
+
+**Enhancement**
+- **API** - API now has an ``onRequest`` callback setting that receives the XHR promise after initializing the request
+- **Button** - Loading buttons no longer receive `pointer-events` in default theme. Added variable for `loading button` opacity.
+- **Card** - Card now has colored variations **Tahnks @romuloctba**
+- **Dropdown** - `search selection dropdown` will now close the menu when a `dropdown icon` is clicked
+- **Dropdown** - Added new dropdown setting, `forceSelection` which forces `search selection` to a selected value on blur. Defaults to `true`.
+- **Flag** - Updated Burma/Myanmar flag to current flag (was pre-2010 flag)
+- **Form** - Input rules now apply to `input[type="time"]`
+- **Form Validation** - `get values`, `set values` now support multiple select e.g. `field[]`
+- **Form Validation** - Dropdown and checkbox will now validate after interaction with `on: 'blur'`
+- **Headers** - Headers can now contain images alongside text, added examples to docs
+- **Icon** - Added woff2 icon files for supported browsers (20% file-size decrease) **Thanks FontAwesome**
+- **Label** - `ribbon label` can now be used inside `ui image` and `ui card` correctly
+- **Sidebar** - Sidebars in IE now work correctly with `context` specified
+- **Rating** - Vertical alignment of `ui rating` with inline content now accounts for parent line height
+
+**Bugs**
+- **All Modules** - Fixed bug where element `destroy` could remove third party events when re-initialized
+- **Breadcrumb** - Breadcrumb icon now has exact px value to alleviate vertical align issues
+- **Card** - Star / Like button colors have been fixed to match `ui rating` inside `card`
+- **Card** - Hiding a card with `display: none` no longer causes layout issues with `(x) cards`
+- **Card** - `image` inside `content` no longer has a fixed size **Thanks @romuloctba**
+- **Form** - `info message` are no longer hidden by default inside `ui form`
+- **Form** - Lightened error dropdown hover text color to be more legible
+- **Dropdown** - Upward dropdown now has upward arrow icon
+- **Icon** - `external link` and `external link square` has been renamed to `external icon` to no longer receive `link` styles by default
+- **Modal** - Modal now swaps to `scrolling modal` when `close icon` no longer can be displayed, instead of modal `content`
+- **Steps** - Fixed bug where evenly divided steps were no longer fluid
+- **Transition** - Fixes bug where `moduleNamespace` was being omitted
+- **Transition** - Transitions with direction now use word order dependency to prevent conflict with component directions, for example `bottom left popup slide down in transition
+
+**Docs**
+- Fixed bug with chinese mirror modal appearing on every page load when selecting chinese language
+
 ### Version 1.8.1 - January 26, 2015
 
 **Bugs**
 - **Grid** - Removed `text-align: left` from column definition. Now inherits from grid.
-- **Input** - `ui labeled input` now forces  `table-cell` so that it can use `ui dropdown`, added example in ui docs with dropdown
+- **Input** - `ui labeled input` now uses  `flex` added example in ui docs with dropdown
 - **Input** - Fix border radius on `ui action input` with button groups, aka `ui buttons`
 - **Popup** - Popup `hide all` will now use transition set in `settings.transition` when closing other popups
 - **Grid** - Fix `doubling grid` setting `100% width` which may cause

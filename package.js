@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Semantic UI packaged for Meteor",
-  version: "1.8.1",
+  version: "1.9.1",
   name: "nooitaf:semantic-ui",
   git: "https://github.com/nooitaf/meteor-semantic-ui.git"
 });
@@ -85,6 +85,7 @@ Package.on_use(function (api) {
     assetPath + 'themes/default/assets/fonts/icons.svg',
     assetPath + 'themes/default/assets/fonts/icons.ttf',
     assetPath + 'themes/default/assets/fonts/icons.woff',
+    assetPath + 'themes/default/assets/fonts/icons.woff2',
     assetPath + 'themes/default/assets/images/flags.png'
   ];
   api.add_files(assetFiles, 'client');
