@@ -1,4 +1,5 @@
 ##Semantic UI package for meteor
+
 [![Build Status](https://travis-ci.org/nooitaf/meteor-semantic-ui.svg?branch=master)](https://travis-ci.org/nooitaf/meteor-semantic-ui.svg?branch=master)
 
 ###What is this?
@@ -44,5 +45,6 @@ Template.hello.events({
   }
 });
 ```
-http://semantic-ui.com/modules/modal.html#/examples
+[semantic-ui.com module examples](http://semantic-ui.com/modules/modal.html#/examples)
 
+---
