@@ -1,5 +1,18 @@
 ## RELEASE NOTES
 
+### Version 1.9.2 - February 19, 2015
+
+Added new repositories for css and less only versions, can be installed with
+```bash
+npm install semantic-ui-less
+npm install semantic-ui-css
+```
+
+**Bug Fixes**
+
+- **Modal** - Fixes typo causing `middle aligned` image not to work correctly.
+- **Build** - `gulp watch` now compiles concatenated css (missing in `1.9.1` only)
+
 ### Version 1.9.1 - February 18, 2015
 
 **LESS Changes**
