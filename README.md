@@ -1,8 +1,9 @@
-## Semantic UI package for meteor
-# Deprecated
+## [DEPRECATED] Semantic UI package for meteor
 Please use the official `semantic:ui-css` package from now on.  
 [Semantic UI on Atmosphere](https://atmospherejs.com/semantic)
 
+
+## Semantic UI package for meteor
 [![Build Status](https://travis-ci.org/nooitaf/meteor-semantic-ui.svg?branch=master)](https://travis-ci.org/nooitaf/meteor-semantic-ui.svg?branch=master)
 
 ### What is this?
