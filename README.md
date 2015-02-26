@@ -1,9 +1,12 @@
 ## Semantic UI package for meteor
+#### Deprecated
+Please use the official `semantic:ui-css` package from now on.  
+[Semantic UI on Atmosphere](https://atmospherejs.com/semantic)
 
 [![Build Status](https://travis-ci.org/nooitaf/meteor-semantic-ui.svg?branch=master)](https://travis-ci.org/nooitaf/meteor-semantic-ui.svg?branch=master)
 
 ### What is this?
-This is a wrapper for Semantic UI `v1.9.3` for Meteor.
+This is a wrapper for Semantic UI `v1.10.2` for Meteor.
 
 ### What is Semantic UI?
 Semantic is a set of specifications for sharing UI elements between developers. Semantic is also a UI library to make front end development simpler and easier to learn. 

@@ -1,6 +1,6 @@
 Package.describe({
-  summary: "Semantic UI packaged for Meteor",
-  version: "1.9.3",
+  summary: "Semantic UI packaged for Meteor [deprecated]",
+  version: "1.10.2",
   name: "nooitaf:semantic-ui",
   git: "https://github.com/nooitaf/meteor-semantic-ui.git"
 });
@@ -14,6 +14,7 @@ Package.on_use(function (api) {
 
   var assetPath = path.join('lib/semantic-ui/');
   var assetFiles = [
+    'deprecated-warning.js',
     assetPath + 'components/ad.css',
     assetPath + 'components/accordion.css',
     assetPath + 'components/accordion.js',
