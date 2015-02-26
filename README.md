@@ -1,4 +1,4 @@
-## [DEPRECATED] Semantic UI package for meteor
+## [DEPRECATED]
 Please use the official `semantic:ui-css` package from now on.  
 [Semantic UI on Atmosphere](https://atmospherejs.com/semantic)
 
